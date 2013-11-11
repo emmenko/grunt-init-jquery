@@ -30,7 +30,7 @@ describe "jQuery#{%= js_safe_name %}", ->
 describe "jQuery.{%= js_safe_name %}", ->
 
   it "should be awesome", ->
-    expect($.{%= js_safe_name %}()).toBe "awesome"
+    expect($.{%= js_safe_name %}()).toBe "awesome."
     expect($.{%= js_safe_name %}(punctuation: "!")).toBe "awesome!"
 
 describe ":{%= js_safe_name %} selector", ->

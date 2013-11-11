@@ -65,7 +65,7 @@ module.exports = (grunt)->
       options:
         banner: "<%= meta.banner %>"
       dist:
-        src: "<%= concat.dist.dest %>"
+        src: "dist/<%= pkg.name %>.js"
         dest: "dist/<%= pkg.name %>.min.js"
 
     # watching for changes

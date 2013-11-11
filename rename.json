@@ -1,4 +1,4 @@
 {
   "src/coffee/name.coffee": "src/coffee/{%= name %}.coffee",
-  "src/spec/name.spec.coffee": "src/spec/{%= name %}spec.coffee"
+  "src/spec/name.spec.coffee": "src/spec/{%= name %}.spec.coffee"
 }
