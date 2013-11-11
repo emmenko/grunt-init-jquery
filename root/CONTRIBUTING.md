@@ -7,7 +7,8 @@ Please don't edit files in the `dist` subdirectory as they are generated via Gru
 Regarding code style like indentation and whitespace, **follow the conventions you see used in the source already.**
 
 ### Test
-While Grunt can run the included unit tests via [PhantomJS](http://phantomjs.org/), this shouldn't be considered a substitute for the real thing. Please be sure to test the `test/*.html` unit test file(s) in _actual_ browsers.
+While Grunt can run the included unit tests via [PhantomJS](http://phantomjs.org/), this shouldn't be considered a substitute for the real thing.
+You can [run your tests on a server](https://github.com/gruntjs/grunt-contrib-jasmine#run-specs-locally-or-on-an-ad-hoc-server) if you want to test your library in an _actual_ browser.
 
 ## Modifying the code
 First, ensure that you have the latest [Node.js](http://nodejs.org/) and [npm](http://npmjs.org/) installed.
