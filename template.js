@@ -9,7 +9,7 @@
 'use strict';
 
 // Basic template description.
-exports.description = 'Create a jQuery plugin, including QUnit unit tests.';
+exports.description = 'Create a jQuery plugin, including Jasmine unit tests.';
 
 // Template-specific notes to be displayed before question prompts.
 exports.notes = '_Project name_ should not contain "jquery" or "js" and ' +
@@ -76,16 +76,19 @@ exports.template = function(grunt, init, done) {
     init.writePackageJSON('package.json', {
       name: 'jquery-plugin',
       version: '0.0.0-ignored',
-      npm_test: 'grunt qunit',
+      npm_test: 'grunt test',
       // TODO: pull from grunt's package.json
       node_version: '>= 0.8.0',
       devDependencies: {
-        'grunt-contrib-jshint': '~0.6.0',
-        'grunt-contrib-qunit': '~0.2.0',
+        'grunt-bump': '~0.0.11',
+        'grunt-coffeelint': '~0.0.7',
+        'grunt-contrib-clean': '~0.5.0',
+        'grunt-contrib-coffee': '~0.7.0',
         'grunt-contrib-concat': '~0.3.0',
-        'grunt-contrib-uglify': '~0.2.0',
-        'grunt-contrib-watch': '~0.4.0',
-        'grunt-contrib-clean': '~0.4.0',
+        "grunt-contrib-jasmine": "~0.5.1",
+        'grunt-contrib-uglify': '~0.2.6',
+        'grunt-contrib-watch': '~0.5.3',
+        'grunt-shell': '~0.5.0'
       },
     });
 
