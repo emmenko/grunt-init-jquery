@@ -28,6 +28,6 @@
   # Custom selector.
   $.expr[":"].{%= js_safe_name %} = (elem)->
     # Is this element awesome?
-    return $(elem).text().indexOf("awesome") !== -1
+    return $(elem).text().indexOf("awesome") isnt -1
 
 )(jQuery)

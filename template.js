@@ -73,10 +73,8 @@ exports.template = function(grunt, init, done) {
     init.copyAndProcess(files, props, {noProcess: 'libs/**'});
 
     // Generate package.json file, used by npm and grunt.
-    init.writePackageJSON('package.json', {
-      name: 'jquery-plugin',
-      version: '0.0.0-ignored',
-      npm_test: 'grunt test',
+    init.writePackageJSON('package.json', $.extend({
+      keywords: ["jquery", "awesome", props.name],
       // TODO: pull from grunt's package.json
       node_version: '>= 0.8.0',
       devDependencies: {
@@ -90,7 +88,10 @@ exports.template = function(grunt, init, done) {
         'grunt-contrib-watch': '~0.5.3',
         'grunt-shell': '~0.5.0'
       },
-    });
+      scripts: {
+        test: "grunt test"
+      }
+    }), props);
 
     // Generate jquery.json file.
     init.writePackageJSON(props.jqueryjson, props, function(pkg, props) {

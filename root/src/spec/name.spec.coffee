@@ -52,5 +52,3 @@ describe ":{%= js_safe_name %} selector", ->
 
   it "should be awesome", ->
     expect(@elems.filter(":{%= js_safe_name %}").get()).toEqual @elems.last().get()
-
-}(jQuery));
