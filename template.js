@@ -9,7 +9,7 @@
 'use strict';
 
 // Basic template description.
-exports.description = 'Create a jQuery plugin, including Jasmine unit tests.';
+exports.description = 'Create a jQuery plugin, including Coffeescript development and Jasmine unit tests.';
 
 // Template-specific notes to be displayed before question prompts.
 exports.notes = '_Project name_ should not contain "jquery" or "js" and ' +

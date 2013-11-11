@@ -6,7 +6,7 @@ Please don't edit files in the `dist` subdirectory as they are generated via Gru
 ### Code style
 Regarding code style like indentation and whitespace, **follow the conventions you see used in the source already.**
 
-### PhantomJS
+### Test
 While Grunt can run the included unit tests via [PhantomJS](http://phantomjs.org/), this shouldn't be considered a substitute for the real thing. Please be sure to test the `test/*.html` unit test file(s) in _actual_ browsers.
 
 ## Modifying the code
@@ -23,9 +23,8 @@ Assuming that you don't see any red, you're ready to go. Just be sure to run `gr
 ## Submitting pull requests
 
 1. Create a new branch, please don't work in your `master` branch directly.
-1. Add failing tests for the change you want to make. Run `grunt` to see the tests fail.
+1. Add failing tests for the change you want to make. Run `grunt test` to see the tests fail.
 1. Fix stuff.
-1. Run `grunt` to see if the tests pass. Repeat steps 2-4 until done.
-1. Open `test/*.html` unit test file(s) in actual browser to ensure tests pass everywhere.
+1. Run `grunt test` to see if the tests pass. Repeat steps 2-4 until done.
 1. Update the documentation to reflect any changes.
 1. Push to your fork and submit a pull request.

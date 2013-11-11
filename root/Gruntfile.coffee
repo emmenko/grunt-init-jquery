@@ -117,6 +117,7 @@ module.exports = (grunt)->
   grunt.loadNpmTasks "grunt-shell"
 
   # register tasks
+  grunt.registerTask "default", ["build"]
   grunt.registerTask "build", ["clean", "coffeelint", "coffee", "concat", "uglify"]
   grunt.registerTask "test", ["build", "jasmine"]
   grunt.registerTask "release", "Release a new version, push it and publish it", (target)->
